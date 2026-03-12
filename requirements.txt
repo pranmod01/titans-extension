@@ -1,0 +1,21 @@
+# Core dependencies
+torch>=2.0.0
+titans-pytorch>=0.5.0
+
+# Titans dependencies (auto-installed with titans-pytorch)
+einops>=0.8.0
+einx>=0.3.0
+rotary-embedding-torch
+axial-positional-embedding>=0.3.10
+x-transformers
+hyper-connections>=0.3.11
+
+# Training utilities
+tqdm>=4.65.0
+numpy>=1.24.0
+
+# Experiment tracking (optional, for Colab)
+wandb>=0.15.0
+
+# For data handling
+requests>=2.28.0
