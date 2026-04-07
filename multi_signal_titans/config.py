@@ -102,9 +102,9 @@ class TrainingConfig:
     checkpoint_interval: int = 1000
     eval_interval: int = 500
 
-    # Checkpointing paths (for Colab/Google Drive)
-    checkpoint_dir: str = "/content/drive/MyDrive/titans_checkpoints/"
-    local_checkpoint_dir: str = "./checkpoints/"  # Fallback for local runs
+    # Checkpointing paths
+    checkpoint_dir: str = "./checkpoints/"  # Primary checkpoint location
+    local_checkpoint_dir: str = "./checkpoints/"  # Fallback (same for non-Colab)
 
     # Mixed precision
     use_amp: bool = True
