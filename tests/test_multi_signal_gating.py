@@ -278,9 +278,14 @@ class TestForwardPass:
             chunk_size=CHUNK,
             heads=HEADS,
         ).train()
-        # Use SGD to avoid AdamW's in-place ops conflicting with titans-pytorch's
-        # shared fast-weight parameter storage.
-        optimizer = torch.optim.SGD(mem.parameters(), lr=1e-3)
+        # titans-pytorch's memory_model_parameters use aliased storage that
+        # is incompatible with standard in-place optimizer updates. Only
+        # optimize the gating parameters (our code) here.
+        gating_params = [
+            p for name, p in mem.named_parameters()
+            if 'memory_model_parameters' not in name
+        ]
+        optimizer = torch.optim.AdamW(gating_params, lr=3e-4)
 
         for _ in range(3):
             seq = torch.randn(BATCH, SEQ, DIM)
@@ -288,7 +293,7 @@ class TestForwardPass:
             loss = retrieved.pow(2).mean()
             optimizer.zero_grad()
             loss.backward()
-            torch.nn.utils.clip_grad_norm_(mem.parameters(), 1.0)
+            torch.nn.utils.clip_grad_norm_(gating_params, 1.0)
             optimizer.step()
 
         assert not torch.isnan(retrieved).any()

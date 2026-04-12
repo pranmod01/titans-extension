@@ -370,6 +370,7 @@ def experiment_4_continual_learning(
             'phase1_before': None,
             'phase1_after': None,
             'phase2_after': None,
+            'retention_ratio': None,
         }
 
         # Phase 1: Train on first half
@@ -377,6 +378,11 @@ def experiment_4_continual_learning(
         phase1_loader, phase1_eval_loader = create_dataloaders(
             phase1_train, phase1_eval, config.training
         )
+
+        # Baseline: evaluate before any training
+        phase1_ppl_before = compute_perplexity(model, phase1_eval_loader, device)
+        model_results['phase1_before'] = phase1_ppl_before
+        print(f"Phase 1 perplexity before training: {phase1_ppl_before:.2f}")
 
         train_phase(
             model=model,
@@ -410,10 +416,18 @@ def experiment_4_continual_learning(
         model_results['phase2_after'] = phase1_ppl_after
         print(f"Phase 1 perplexity after phase 2: {phase1_ppl_after:.2f}")
 
-        # Calculate retention
-        retention = phase1_ppl / phase1_ppl_after  # Higher is better
+        # Retention ratio: how much of the phase-1 learning survives phase-2 training.
+        # = 1 - (degradation / gain), where degradation = phase2_after - phase1_after
+        # and gain = phase1_before - phase1_after (how much phase 1 improved things).
+        # Simplified: phase1_after / phase2_after  (<=1 = forgetting, =1 = perfect retention)
+        gain = phase1_ppl_before - phase1_ppl          # how much phase 1 improved PPL
+        degradation = phase1_ppl_after - phase1_ppl    # how much phase 2 hurt phase-1 PPL
+        if gain > 0:
+            retention = 1.0 - (degradation / gain)    # 1=perfect, 0=all gains lost, <0=worse than init
+        else:
+            retention = float('nan')                   # model didn't learn in phase 1
         model_results['retention_ratio'] = retention
-        print(f"Retention ratio: {retention:.2f}")
+        print(f"Retention ratio: {retention:.4f}  (1=perfect, 0=all gains lost)")
 
         results[model_type] = model_results
 
@@ -609,29 +623,54 @@ def train_needle_model(
     device: torch.device,
     epochs: int = 10
 ):
-    """Train model on needle-in-haystack task."""
+    """Train model on needle-in-haystack task.
+
+    The input sequences already contain the retrieval cue near the end
+    (last pattern_len+10 positions). We supervise the model to predict the
+    needle tokens at the final pattern_len positions using next-token
+    prediction loss restricted to those positions.
+    """
     model.train()
     optimizer = torch.optim.AdamW(
         model.parameters(),
-        lr=config.learning_rate
+        lr=config.learning_rate,
+        weight_decay=config.weight_decay
     )
+
+    num_steps = epochs * (len(train_data) // config.batch_size)
+    warmup_steps = min(getattr(config, 'warmup_steps', 500), num_steps // 4)
+
+    def lr_lambda(step: int) -> float:
+        if step < warmup_steps:
+            return step / max(1, warmup_steps)
+        return 1.0
+
+    scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda)
+    step = 0
 
     for epoch in range(epochs):
         total_loss = 0
+        num_batches = 0
         for i in range(0, len(train_data), config.batch_size):
             batch = train_data[i:i + config.batch_size]
             target = train_labels[i:i + config.batch_size]
 
             optimizer.zero_grad()
 
-            # Get logits for last positions
-            try:
-                logits = model(batch, return_metrics=False)
-            except TypeError:
-                logits = model(batch)
+            # Use next-token prediction: input is seq[:-1], target is seq[1:]
+            # but we only compute loss on the final pattern_len positions so
+            # the model is trained specifically to recall the needle at the end.
+            inp = batch[:, :-1]
+            pattern_len = target.shape[1]
 
-            # Extract predictions for needle positions
-            pred_logits = logits[:, -target.shape[1]:, :]
+            try:
+                logits = model(inp, return_metrics=False)
+            except TypeError:
+                logits = model(inp)
+
+            # logits: [batch, seq-1, vocab]
+            # supervise only the last pattern_len positions
+            pred_logits = logits[:, -pattern_len:, :]  # [batch, pattern_len, vocab]
 
             loss = F.cross_entropy(
                 pred_logits.reshape(-1, pred_logits.shape[-1]),
@@ -639,11 +678,16 @@ def train_needle_model(
             )
 
             loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), config.max_grad_norm)
             optimizer.step()
+            scheduler.step()
+            step += 1
 
             total_loss += loss.item()
+            num_batches += 1
 
-        print(f"Epoch {epoch+1}/{epochs}, Loss: {total_loss:.4f}")
+        avg_loss = total_loss / max(1, num_batches)
+        print(f"Epoch {epoch+1}/{epochs}, Loss: {avg_loss:.4f}")
 
 
 def evaluate_needle_retrieval(
@@ -653,28 +697,36 @@ def evaluate_needle_retrieval(
     eval_positions: List[int],
     device: torch.device
 ) -> float:
-    """Evaluate needle retrieval accuracy."""
+    """Evaluate needle retrieval accuracy (per-token).
+
+    Returns the fraction of individual pattern tokens predicted correctly
+    across all evaluation examples. Per-token accuracy is more informative
+    than exact-sequence match for an 8-token pattern over a 256-token vocab
+    (chance is 1/256 ≈ 0.4% per token vs ~0% for exact match).
+    """
     model.eval()
-    correct = 0
-    total = 0
+    correct_tokens = 0
+    total_tokens = 0
 
     with torch.no_grad():
-        for i in range(len(eval_data)):
-            batch = eval_data[i:i+1]
-            target = eval_labels[i]
+        for i in range(0, len(eval_data), 4):  # small batches to save memory
+            batch = eval_data[i:i+4]
+            target = eval_labels[i:i+4]
+
+            inp = batch[:, :-1]
+            pattern_len = target.shape[1]
 
             try:
-                logits = model(batch, return_metrics=False)
+                logits = model(inp, return_metrics=False)
             except TypeError:
-                logits = model(batch)
+                logits = model(inp)
 
-            pred = logits[0, -len(target):].argmax(dim=-1)
+            pred = logits[:, -pattern_len:, :].argmax(dim=-1)  # [batch, pattern_len]
 
-            if torch.equal(pred.cpu(), target.cpu()):
-                correct += 1
-            total += 1
+            correct_tokens += (pred.cpu() == target.cpu()).sum().item()
+            total_tokens += target.numel()
 
-    return correct / total
+    return correct_tokens / total_tokens
 
 
 def train_phase(
@@ -687,8 +739,18 @@ def train_phase(
     """Train for one phase of continual learning."""
     optimizer = torch.optim.AdamW(
         model.parameters(),
-        lr=config.learning_rate
+        lr=config.learning_rate,
+        weight_decay=config.weight_decay
     )
+
+    warmup_steps = getattr(config, 'warmup_steps', 500)
+
+    def lr_lambda(step: int) -> float:
+        if step < warmup_steps:
+            return step / max(1, warmup_steps)
+        return 1.0
+
+    scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda)
 
     model.train()
     step = 0
@@ -711,6 +773,7 @@ def train_phase(
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), config.max_grad_norm)
             optimizer.step()
+            scheduler.step()
 
             step += 1
             pbar.update(1)
