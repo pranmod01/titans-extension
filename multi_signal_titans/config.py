@@ -50,10 +50,12 @@ class MultiSignalGatingConfig:
     contiguity_window: int = 8
 
     # Initial values for learnable gate weights (will be learned via backprop)
-    init_w_surprise: float = 1.0
-    init_w_relevance: float = 0.5
-    init_w_contiguity: float = 0.5
-    init_bias: float = 0.0
+    # w_surprise starts small so early surprise values (~4-7 cross-entropy) don't
+    # saturate the gate at init. Negative bias keeps gate near 0.5 initially.
+    init_w_surprise: float = 0.1
+    init_w_relevance: float = 0.1
+    init_w_contiguity: float = 0.1
+    init_bias: float = -2.0
 
     # Initial decay rate for temporal contiguity (lambda)
     init_decay_lambda: float = 0.5

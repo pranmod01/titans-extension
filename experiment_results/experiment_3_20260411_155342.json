@@ -1,0 +1,12 @@
+{
+  "multi_signal": {
+    "accuracy": 0.0,
+    "num_eval": 100,
+    "seq_len": 4096
+  },
+  "dual_store": {
+    "accuracy": 0.0,
+    "num_eval": 100,
+    "seq_len": 4096
+  }
+}

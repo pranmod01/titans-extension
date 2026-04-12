@@ -1,0 +1,3008 @@
+{
+  "vanilla": [
+    {
+      "step": 50,
+      "loss": 3.767149796485901,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 100,
+      "loss": 3.317471060752869,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 150,
+      "loss": 2.8475687313079834,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 200,
+      "loss": 2.5810415267944338,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 250,
+      "loss": 2.391004343032837,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 300,
+      "loss": 2.297389907836914,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 350,
+      "loss": 2.2276231908798216,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 400,
+      "loss": 2.2145447444915773,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 450,
+      "loss": 2.137101535797119,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 500,
+      "loss": 2.082366988658905,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 550,
+      "loss": 2.051326882839203,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 600,
+      "loss": 2.0298060083389284,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 650,
+      "loss": 1.9649499297142028,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 700,
+      "loss": 1.9512029099464416,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 750,
+      "loss": 1.9639490127563477,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 800,
+      "loss": 1.897670669555664,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 850,
+      "loss": 1.9090058827400207,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 900,
+      "loss": 1.8855884051322938,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 950,
+      "loss": 1.8772700881958009,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1000,
+      "loss": 1.8364140558242799,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1050,
+      "loss": 1.8436645317077636,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1100,
+      "loss": 1.8170391178131104,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1150,
+      "loss": 1.8251148319244386,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1200,
+      "loss": 1.7763070249557495,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1250,
+      "loss": 1.7819607377052307,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1300,
+      "loss": 1.763638617992401,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1350,
+      "loss": 1.7318835425376893,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1400,
+      "loss": 1.7783931064605714,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1450,
+      "loss": 1.7636017823219299,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1500,
+      "loss": 1.7563582420349122,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1550,
+      "loss": 1.7197644162178038,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1600,
+      "loss": 1.7373237657546996,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1650,
+      "loss": 1.685743420124054,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1700,
+      "loss": 1.7210412812232971,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1750,
+      "loss": 1.7173109698295592,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1800,
+      "loss": 1.7093001508712768,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1850,
+      "loss": 1.7078554248809814,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1900,
+      "loss": 1.6900779294967652,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1950,
+      "loss": 1.6746358132362367,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2000,
+      "loss": 1.695395131111145,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2050,
+      "loss": 1.6505263352394104,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2100,
+      "loss": 1.6897455549240112,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2150,
+      "loss": 1.6787175846099853,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2200,
+      "loss": 1.6489479899406434,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2250,
+      "loss": 1.6672124457359314,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2300,
+      "loss": 1.6541998171806336,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2350,
+      "loss": 1.637116253376007,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2400,
+      "loss": 1.610392117500305,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2450,
+      "loss": 1.6258965563774108,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2500,
+      "loss": 1.6427337265014648,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2550,
+      "loss": 1.6039399576187134,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2600,
+      "loss": 1.5966378164291382,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2650,
+      "loss": 1.587094213962555,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2700,
+      "loss": 1.619073176383972,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2750,
+      "loss": 1.5888022089004517,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2800,
+      "loss": 1.6135434627532959,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2850,
+      "loss": 1.6001394891738892,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2900,
+      "loss": 1.632408905029297,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2950,
+      "loss": 1.5949707651138305,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3000,
+      "loss": 1.5850841307640076,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3050,
+      "loss": 1.6077469277381897,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3100,
+      "loss": 1.56229838848114,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3150,
+      "loss": 1.5816072607040406,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3200,
+      "loss": 1.5654398369789124,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3250,
+      "loss": 1.5779342126846314,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3300,
+      "loss": 1.5664355063438415,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3350,
+      "loss": 1.5913715910911561,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3400,
+      "loss": 1.5876690173149108,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3450,
+      "loss": 1.560730984210968,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3500,
+      "loss": 1.5572706794738769,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3550,
+      "loss": 1.5581574440002441,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3600,
+      "loss": 1.5633366322517395,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3650,
+      "loss": 1.5492920327186583,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3700,
+      "loss": 1.5456277418136597,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3750,
+      "loss": 1.5294775176048279,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3800,
+      "loss": 1.56456494808197,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3850,
+      "loss": 1.527685341835022,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3900,
+      "loss": 1.560417833328247,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3950,
+      "loss": 1.5429286694526672,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4000,
+      "loss": 1.5660269522666932,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4050,
+      "loss": 1.5503064966201783,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4100,
+      "loss": 1.561624436378479,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4150,
+      "loss": 1.5674858331680297,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4200,
+      "loss": 1.5557812452316284,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4250,
+      "loss": 1.5091174125671387,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4300,
+      "loss": 1.5426135420799256,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4350,
+      "loss": 1.537713279724121,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4400,
+      "loss": 1.518421995639801,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4450,
+      "loss": 1.5551524591445922,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4500,
+      "loss": 1.5206286764144898,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4550,
+      "loss": 1.5308311414718627,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4600,
+      "loss": 1.5203877687454224,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4650,
+      "loss": 1.5195905017852782,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4700,
+      "loss": 1.504009916782379,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4750,
+      "loss": 1.5124603939056396,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4800,
+      "loss": 1.5351767539978027,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4850,
+      "loss": 1.512667429447174,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4900,
+      "loss": 1.5201624035835266,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4950,
+      "loss": 1.5108601903915406,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5000,
+      "loss": 1.502719190120697,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5050,
+      "loss": 1.487150592803955,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5100,
+      "loss": 1.5166123986244202,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5150,
+      "loss": 1.5043399333953857,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5200,
+      "loss": 1.5412218403816222,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5250,
+      "loss": 1.5024859380722047,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5300,
+      "loss": 1.5139447951316833,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5350,
+      "loss": 1.5053349471092223,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5400,
+      "loss": 1.521073615550995,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5450,
+      "loss": 1.4775952291488648,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5500,
+      "loss": 1.502777681350708,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5550,
+      "loss": 1.5175835227966308,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5600,
+      "loss": 1.5040046644210816,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5650,
+      "loss": 1.4959111261367797,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5700,
+      "loss": 1.4885039520263672,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5750,
+      "loss": 1.4861614990234375,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5800,
+      "loss": 1.4873320269584656,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5850,
+      "loss": 1.4877160096168518,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5900,
+      "loss": 1.494626500606537,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5950,
+      "loss": 1.5005461764335633,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6000,
+      "loss": 1.499098880290985,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6050,
+      "loss": 1.495298547744751,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6100,
+      "loss": 1.5185658144950867,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6150,
+      "loss": 1.4902546572685242,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6200,
+      "loss": 1.5074579644203185,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6250,
+      "loss": 1.484130482673645,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6300,
+      "loss": 1.4749100947380065,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6350,
+      "loss": 1.465293173789978,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6400,
+      "loss": 1.467752254009247,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6450,
+      "loss": 1.4751274728775023,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6500,
+      "loss": 1.4891447234153747,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6550,
+      "loss": 1.5044203686714173,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6600,
+      "loss": 1.4881049418449401,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6650,
+      "loss": 1.494600191116333,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6700,
+      "loss": 1.4682561302185058,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6750,
+      "loss": 1.4851409769058228,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6800,
+      "loss": 1.4699473452568055,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6850,
+      "loss": 1.436435706615448,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6900,
+      "loss": 1.4997355294227601,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6950,
+      "loss": 1.4630325603485108,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7000,
+      "loss": 1.494734127521515,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7050,
+      "loss": 1.4702299618721009,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7100,
+      "loss": 1.4458681416511536,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7150,
+      "loss": 1.4686806964874268,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7200,
+      "loss": 1.4836680006980896,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7250,
+      "loss": 1.4710785388946532,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7300,
+      "loss": 1.4511067795753478,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7350,
+      "loss": 1.4828261017799378,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7400,
+      "loss": 1.434926986694336,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7450,
+      "loss": 1.4688388013839722,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7500,
+      "loss": 1.4784683394432068,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7550,
+      "loss": 1.4421346116065978,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7600,
+      "loss": 1.4478318643569947,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7650,
+      "loss": 1.4457919311523437,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7700,
+      "loss": 1.4390645027160645,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7750,
+      "loss": 1.4550110077857972,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7800,
+      "loss": 1.4512559938430787,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7850,
+      "loss": 1.4623712921142578,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7900,
+      "loss": 1.5027778601646424,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7950,
+      "loss": 1.4494350862503051,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8000,
+      "loss": 1.427877995967865,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8050,
+      "loss": 1.469930760860443,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8100,
+      "loss": 1.4463689231872559,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8150,
+      "loss": 1.4708271741867065,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8200,
+      "loss": 1.422508668899536,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8250,
+      "loss": 1.4921230030059816,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8300,
+      "loss": 1.4329921579360962,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8350,
+      "loss": 1.4329186534881593,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8400,
+      "loss": 1.4670760083198546,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8450,
+      "loss": 1.4751798057556151,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8500,
+      "loss": 1.4513928651809693,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8550,
+      "loss": 1.4294915986061096,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8600,
+      "loss": 1.4391389989852905,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8650,
+      "loss": 1.4803785324096679,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8700,
+      "loss": 1.4320425009727478,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8750,
+      "loss": 1.4403487420082093,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8800,
+      "loss": 1.429775860309601,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8850,
+      "loss": 1.4362314200401307,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8900,
+      "loss": 1.4139625716209412,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8950,
+      "loss": 1.4414566850662232,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9000,
+      "loss": 1.4390492916107178,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9050,
+      "loss": 1.4270001339912415,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9100,
+      "loss": 1.438841896057129,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9150,
+      "loss": 1.423777768611908,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9200,
+      "loss": 1.4310400009155273,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9250,
+      "loss": 1.440056827068329,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9300,
+      "loss": 1.4188806462287902,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9350,
+      "loss": 1.445186538696289,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9400,
+      "loss": 1.4161412334442138,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9450,
+      "loss": 1.4004510855674743,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9500,
+      "loss": 1.4503889966011048,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9550,
+      "loss": 1.419155526161194,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9600,
+      "loss": 1.451913652420044,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9650,
+      "loss": 1.4220855045318603,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9700,
+      "loss": 1.456361131668091,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9750,
+      "loss": 1.4446068048477172,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9800,
+      "loss": 1.4211657404899598,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9850,
+      "loss": 1.4168461894989013,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9900,
+      "loss": 1.4390648007392883,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9950,
+      "loss": 1.4146792578697205,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 10000,
+      "loss": 1.4628433084487915,
+      "model": "Vanilla Transformer"
+    }
+  ],
+  "titans_original": [
+    {
+      "step": 50,
+      "loss": 3.806999673843384,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 100,
+      "loss": 3.3433077716827393,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 150,
+      "loss": 2.939765191078186,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 200,
+      "loss": 2.5762536001205443,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 250,
+      "loss": 2.410826439857483,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 300,
+      "loss": 2.287113742828369,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 350,
+      "loss": 2.1891906380653383,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 400,
+      "loss": 2.138875162601471,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 450,
+      "loss": 2.0584990572929383,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 500,
+      "loss": 1.989585919380188,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 550,
+      "loss": 1.9538804912567138,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 600,
+      "loss": 1.932805368900299,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 650,
+      "loss": 1.8871289134025573,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 700,
+      "loss": 1.880258014202118,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 750,
+      "loss": 1.8561189031600953,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 800,
+      "loss": 1.851504259109497,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 850,
+      "loss": 1.8156147599220276,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 900,
+      "loss": 1.809919137954712,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 950,
+      "loss": 1.7988728284835815,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1000,
+      "loss": 1.8089922618865968,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1050,
+      "loss": 1.7660416746139527,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1100,
+      "loss": 1.7453339433670043,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1150,
+      "loss": 1.7509784173965455,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1200,
+      "loss": 1.7291487383842468,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1250,
+      "loss": 1.7168803763389588,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1300,
+      "loss": 1.7028320026397705,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1350,
+      "loss": 1.703050253391266,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1400,
+      "loss": 1.697882766723633,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1450,
+      "loss": 1.6756731796264648,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1500,
+      "loss": 1.6746959853172303,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1550,
+      "loss": 1.663996365070343,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1600,
+      "loss": 1.6469630765914918,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1650,
+      "loss": 1.6286726236343383,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1700,
+      "loss": 1.6808563208580016,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1750,
+      "loss": 1.6125099444389344,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1800,
+      "loss": 1.6525954985618592,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1850,
+      "loss": 1.6027038049697877,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1900,
+      "loss": 1.6088513779640197,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 1950,
+      "loss": 1.6116611981391906,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2000,
+      "loss": 1.6239668822288513,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2050,
+      "loss": 1.5985696196556092,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2100,
+      "loss": 1.5600319981575013,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2150,
+      "loss": 1.6193952059745789,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2200,
+      "loss": 1.5677754735946656,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2250,
+      "loss": 1.5954323935508727,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2300,
+      "loss": 1.596477952003479,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2350,
+      "loss": 1.5771652889251708,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2400,
+      "loss": 1.561873562335968,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2450,
+      "loss": 1.5581155228614807,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2500,
+      "loss": 1.548134195804596,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2550,
+      "loss": 1.5591072249412536,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2600,
+      "loss": 1.5588975191116332,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2650,
+      "loss": 1.568499093055725,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2700,
+      "loss": 1.5501320266723633,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2750,
+      "loss": 1.5409081077575684,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2800,
+      "loss": 1.5562810254096986,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2850,
+      "loss": 1.5544658160209657,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2900,
+      "loss": 1.5763385891914368,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 2950,
+      "loss": 1.508680453300476,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3000,
+      "loss": 1.5661634063720704,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3050,
+      "loss": 1.5258938765525818,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3100,
+      "loss": 1.505955834388733,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3150,
+      "loss": 1.5411158227920532,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3200,
+      "loss": 1.482114520072937,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3250,
+      "loss": 1.515095956325531,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3300,
+      "loss": 1.4906607270240784,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3350,
+      "loss": 1.532937502861023,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3400,
+      "loss": 1.542496507167816,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3450,
+      "loss": 1.4752136516571044,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3500,
+      "loss": 1.5007765007019043,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3550,
+      "loss": 1.5274363517761231,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3600,
+      "loss": 1.497937273979187,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3650,
+      "loss": 1.4988215804100036,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3700,
+      "loss": 1.5048678517341614,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3750,
+      "loss": 1.4923652505874634,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3800,
+      "loss": 1.469529800415039,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3850,
+      "loss": 1.5357538652420044,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3900,
+      "loss": 1.5139833402633667,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 3950,
+      "loss": 1.4883016300201417,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4000,
+      "loss": 1.5032809710502624,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4050,
+      "loss": 1.4871234202384949,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4100,
+      "loss": 1.47172771692276,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4150,
+      "loss": 1.470667338371277,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4200,
+      "loss": 1.4807916283607483,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4250,
+      "loss": 1.4683093905448914,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4300,
+      "loss": 1.4789475083351136,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4350,
+      "loss": 1.4642351508140563,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4400,
+      "loss": 1.5107784700393676,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4450,
+      "loss": 1.4401258277893065,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4500,
+      "loss": 1.4797089314460754,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4550,
+      "loss": 1.4651975154876709,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4600,
+      "loss": 1.4692656350135804,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4650,
+      "loss": 1.4834026765823365,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4700,
+      "loss": 1.491276421546936,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4750,
+      "loss": 1.4655253076553345,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4800,
+      "loss": 1.4631689858436585,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4850,
+      "loss": 1.482857849597931,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4900,
+      "loss": 1.4767557406425476,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 4950,
+      "loss": 1.4626888942718506,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5000,
+      "loss": 1.4783236002922058,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5050,
+      "loss": 1.470469126701355,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5100,
+      "loss": 1.4532692885398866,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5150,
+      "loss": 1.4540968227386475,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5200,
+      "loss": 1.4414760279655456,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5250,
+      "loss": 1.4776113653182983,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5300,
+      "loss": 1.4705798983573914,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5350,
+      "loss": 1.476117582321167,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5400,
+      "loss": 1.4648128128051758,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5450,
+      "loss": 1.4676409769058227,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5500,
+      "loss": 1.46090496301651,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5550,
+      "loss": 1.4556590366363524,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5600,
+      "loss": 1.393880705833435,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5650,
+      "loss": 1.4503007960319518,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5700,
+      "loss": 1.4597778034210205,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5750,
+      "loss": 1.4196283745765685,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5800,
+      "loss": 1.4583401489257812,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5850,
+      "loss": 1.4544434499740602,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5900,
+      "loss": 1.446037254333496,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 5950,
+      "loss": 1.4365673351287842,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6000,
+      "loss": 1.4585891413688659,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6050,
+      "loss": 1.44429536819458,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6100,
+      "loss": 1.441277322769165,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6150,
+      "loss": 1.4457117486000062,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6200,
+      "loss": 1.4553582215309142,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6250,
+      "loss": 1.4364337396621705,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6300,
+      "loss": 1.4306542348861695,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6350,
+      "loss": 1.410083727836609,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6400,
+      "loss": 1.3981328463554383,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6450,
+      "loss": 1.4317328000068665,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6500,
+      "loss": 1.4324813818931579,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6550,
+      "loss": 1.4028506481647491,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6600,
+      "loss": 1.4355407428741456,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6650,
+      "loss": 1.431958429813385,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6700,
+      "loss": 1.4201259517669678,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6750,
+      "loss": 1.4308872866630553,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6800,
+      "loss": 1.4208879804611205,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6850,
+      "loss": 1.4163046383857727,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6900,
+      "loss": 1.3956238865852355,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 6950,
+      "loss": 1.406555757522583,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7000,
+      "loss": 1.4255087566375733,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7050,
+      "loss": 1.4375644111633301,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7100,
+      "loss": 1.4237264895439148,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7150,
+      "loss": 1.4219942450523377,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7200,
+      "loss": 1.417810685634613,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7250,
+      "loss": 1.4092856240272522,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7300,
+      "loss": 1.4233104825019836,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7350,
+      "loss": 1.3951517891883851,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7400,
+      "loss": 1.3931061506271363,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7450,
+      "loss": 1.4024957489967347,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7500,
+      "loss": 1.3879035806655884,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7550,
+      "loss": 1.3935185980796814,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7600,
+      "loss": 1.3897409272193908,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7650,
+      "loss": 1.3954172682762147,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7700,
+      "loss": 1.3943080258369447,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7750,
+      "loss": 1.4107982325553894,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7800,
+      "loss": 1.3952612447738648,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7850,
+      "loss": 1.4013261604309082,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7900,
+      "loss": 1.427417871952057,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 7950,
+      "loss": 1.4008175563812255,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8000,
+      "loss": 1.4123021030426026,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8050,
+      "loss": 1.3566054797172546,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8100,
+      "loss": 1.4133356142044067,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8150,
+      "loss": 1.4049625897407532,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8200,
+      "loss": 1.3916644549369812,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8250,
+      "loss": 1.390629768371582,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8300,
+      "loss": 1.407163405418396,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8350,
+      "loss": 1.4113167917728424,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8400,
+      "loss": 1.4145668625831604,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8450,
+      "loss": 1.3839254093170166,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8500,
+      "loss": 1.372508841753006,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8550,
+      "loss": 1.4253180313110352,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8600,
+      "loss": 1.3777387833595276,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8650,
+      "loss": 1.3820984554290772,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8700,
+      "loss": 1.3978947043418883,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8750,
+      "loss": 1.3743390703201295,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8800,
+      "loss": 1.3952033400535584,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8850,
+      "loss": 1.3918817377090453,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8900,
+      "loss": 1.388539297580719,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 8950,
+      "loss": 1.3334029960632323,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9000,
+      "loss": 1.4155902099609374,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9050,
+      "loss": 1.3848119473457337,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9100,
+      "loss": 1.392918152809143,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9150,
+      "loss": 1.3999287033081054,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9200,
+      "loss": 1.3876217651367186,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9250,
+      "loss": 1.3806599354743958,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9300,
+      "loss": 1.373638129234314,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9350,
+      "loss": 1.3624085593223572,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9400,
+      "loss": 1.3947689890861512,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9450,
+      "loss": 1.3414687490463257,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9500,
+      "loss": 1.3793969583511352,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9550,
+      "loss": 1.3512306141853332,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9600,
+      "loss": 1.3516587781906129,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9650,
+      "loss": 1.3802456426620484,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9700,
+      "loss": 1.3749366068840028,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9750,
+      "loss": 1.3888126254081725,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9800,
+      "loss": 1.3832923436164857,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9850,
+      "loss": 1.3665274000167846,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9900,
+      "loss": 1.3842332363128662,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 9950,
+      "loss": 1.3565641975402831,
+      "model": "Titans MAC (Original)"
+    },
+    {
+      "step": 10000,
+      "loss": 1.3665391409397125,
+      "model": "Titans MAC (Original)"
+    }
+  ],
+  "multi_signal": [
+    {
+      "step": 50,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 100,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 150,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 200,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 250,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 300,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 350,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 400,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 450,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 500,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 550,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 600,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 650,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 700,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 750,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 800,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 850,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 900,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 950,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1000,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1050,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1100,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1150,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1200,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1250,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1300,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1350,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1400,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1450,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1500,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1550,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1600,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1650,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1700,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1750,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1800,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1850,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1900,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 1950,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2000,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2050,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2100,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2150,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2200,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2250,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2300,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2350,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2400,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2450,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2500,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2550,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2600,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2650,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2700,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2750,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2800,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2850,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2900,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 2950,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3000,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3050,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3100,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3150,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3200,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3250,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3300,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3350,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3400,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3450,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3500,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3550,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3600,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3650,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3700,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3750,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3800,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3850,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3900,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 3950,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4000,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4050,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4100,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4150,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4200,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4250,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4300,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4350,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4400,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4450,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4500,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4550,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4600,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4650,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4700,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4750,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4800,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4850,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4900,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 4950,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5000,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5050,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5100,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5150,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5200,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5250,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5300,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5350,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5400,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5450,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5500,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5550,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5600,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5650,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5700,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5750,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5800,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5850,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5900,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 5950,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6000,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6050,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6100,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6150,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6200,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6250,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6300,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6350,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6400,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6450,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6500,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6550,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6600,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6650,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6700,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6750,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6800,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6850,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6900,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 6950,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7000,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7050,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7100,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7150,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7200,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7250,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7300,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7350,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7400,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7450,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7500,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7550,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7600,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7650,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7700,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7750,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7800,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7850,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7900,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 7950,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8000,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8050,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8100,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8150,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8200,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8250,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8300,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8350,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8400,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8450,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8500,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8550,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8600,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8650,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8700,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8750,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8800,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8850,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8900,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 8950,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9000,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9050,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9100,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9150,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9200,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9250,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9300,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9350,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9400,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9450,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9500,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9550,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9600,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9650,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9700,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9750,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9800,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9850,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9900,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 9950,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    },
+    {
+      "step": 10000,
+      "loss": NaN,
+      "model": "Multi-Signal Gated"
+    }
+  ]
+}

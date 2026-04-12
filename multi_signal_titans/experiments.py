@@ -445,6 +445,15 @@ def train_experiment(
         weight_decay=config.weight_decay
     )
 
+    warmup_steps = getattr(config, 'warmup_steps', 500)
+
+    def lr_lambda(step: int) -> float:
+        if step < warmup_steps:
+            return step / max(1, warmup_steps)
+        return 1.0
+
+    scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda)
+
     scaler = GradScaler() if config.use_amp and device.type == 'cuda' else None
 
     model.train()
@@ -484,7 +493,15 @@ def train_experiment(
                 torch.nn.utils.clip_grad_norm_(model.parameters(), config.max_grad_norm)
                 optimizer.step()
 
-            accumulated_loss += loss.item()
+            scheduler.step()
+
+            loss_val = loss.item()
+            if loss_val != loss_val:  # NaN check
+                print(f"\n[{model_name}] NaN loss at step {step + 1}, aborting.")
+                pbar.close()
+                return metrics
+
+            accumulated_loss += loss_val
             num_accumulated += 1
             step += 1
 
@@ -545,9 +562,7 @@ def create_ablation_model(
                 chunk_size=config.model.segment_len,
                 heads=config.model.heads
             )
-            layer_modules[0] = SingleStoreMemory.__new__(SingleStoreMemory)
-            layer_modules[0].memory = ablation_mem
-            layer_modules[0]._beta = torch.tensor(1.0)
+            mem.memory = ablation_mem
 
     return model
 
@@ -611,7 +626,7 @@ def train_needle_model(
 
             # Get logits for last positions
             try:
-                logits, _, _ = model(batch, return_metrics=False)
+                logits = model(batch, return_metrics=False)
             except TypeError:
                 logits = model(batch)
 
@@ -649,7 +664,7 @@ def evaluate_needle_retrieval(
             target = eval_labels[i]
 
             try:
-                logits, _, _ = model(batch, return_metrics=False)
+                logits = model(batch, return_metrics=False)
             except TypeError:
                 logits = model(batch)
 

@@ -134,10 +134,10 @@ class MultiSignalNeuralMemory(nn.Module):
         """
         # Project and normalize hidden states
         h_proj = self.state_proj(hidden_states)
-        h_norm = F.normalize(h_proj, dim=-1)
+        h_norm = F.normalize(h_proj, dim=-1, eps=1e-8)
 
         # Normalize goal vector
-        g_norm = F.normalize(self.goal_vector, dim=-1)
+        g_norm = F.normalize(self.goal_vector, dim=-1, eps=1e-8)
 
         # Cosine similarity
         relevance = torch.einsum('...d,d->...', h_norm, g_norm)
@@ -169,12 +169,13 @@ class MultiSignalNeuralMemory(nn.Module):
         Returns:
             Contiguity signal [batch, seq], updated surprise history [batch, k]
         """
-        # Handle different input shapes
+        # Handle different input shapes - always work in float32 to avoid NaN from AMP
         if current_surprise.dim() == 3:
-            # [batch, heads, seq] -> average over heads
-            surprise = current_surprise.mean(dim=1)
+            surprise = current_surprise.float().mean(dim=1)
         else:
-            surprise = current_surprise
+            surprise = current_surprise.float()
+
+        surprise = torch.clamp(surprise, min=0.0, max=100.0)
 
         batch, seq_len = surprise.shape
         k = self.contiguity_window
@@ -182,31 +183,33 @@ class MultiSignalNeuralMemory(nn.Module):
 
         # Initialize history if needed
         if surprise_history is None:
-            surprise_history = torch.zeros(batch, k, device=device)
+            surprise_history = torch.zeros(batch, k, device=device, dtype=torch.float32)
+        else:
+            surprise_history = surprise_history.float()
 
         # Compute decay weights: exp(-lambda * j) for j = 1, 2, ..., k
-        decay_lambda = F.softplus(self.decay_lambda)  # Ensure positive
-        j = torch.arange(1, k + 1, device=device, dtype=surprise.dtype)
+        decay_lambda = F.softplus(self.decay_lambda.float())  # Ensure positive
+        j = torch.arange(1, k + 1, device=device, dtype=torch.float32)
         decay_weights = torch.exp(-decay_lambda * j)  # [k]
 
-        # Process each position in sequence
-        contiguity = torch.zeros(batch, seq_len, device=device)
+        # Vectorised rolling-max via a causal convolution view.
+        # Build a buffer [batch, seq_len + k] of all surprises (history then current).
+        # Then use unfold to get windows of size k for each output position.
+        full = torch.cat([surprise_history, surprise], dim=1)  # [batch, seq_len + k]
 
-        # Rolling computation
-        history = surprise_history.clone()  # [batch, k]
+        # full[:, t : t+k] are the k *preceding* surprises for output position t
+        # unfold gives [batch, seq_len, k]
+        windows = full.unfold(dimension=1, size=k, step=1)[:, :seq_len, :]  # [batch, seq_len, k]
 
-        for t in range(seq_len):
-            # Compute weighted max of history
-            # C_t = max(S_{t-j} * exp(-lambda * j)) for j in [1, k]
-            weighted_history = history * decay_weights.unsqueeze(0)  # [batch, k]
-            contiguity[:, t] = weighted_history.max(dim=-1).values
+        # decay_weights[j] corresponds to lag j+1; flip so index 0 = oldest lag k
+        # windows[:, t, 0] = surprise at t-k, windows[:, t, k-1] = surprise at t-1
+        dw = decay_weights.flip(0)  # [k], index 0 = lag k, index k-1 = lag 1
 
-            # Update history: shift and add current surprise
-            history = torch.roll(history, shifts=1, dims=-1)
-            history[:, 0] = surprise[:, t]
+        weighted = windows * dw.unsqueeze(0).unsqueeze(0)  # [batch, seq_len, k]
+        contiguity = weighted.max(dim=-1).values  # [batch, seq_len]
 
-        # Return updated history for next call
-        new_history = history
+        # Update history: keep the last k surprises
+        new_history = full[:, -k:].detach()
 
         return contiguity, new_history
 
@@ -229,19 +232,23 @@ class MultiSignalNeuralMemory(nn.Module):
         Returns:
             Composite gate values [batch, seq] in (0, 1)
         """
-        # Average surprise over heads if needed
+        # Average surprise over heads if needed — always use float32 to stay
+        # numerically stable inside AMP autocast regions.
         if surprise.dim() == 3:
-            s = surprise.mean(dim=1)  # [batch, seq]
+            s = surprise.float().mean(dim=1)  # [batch, seq]
         else:
-            s = surprise
+            s = surprise.float()
+
+        # Clamp surprise to prevent inf/NaN from AMP or early training instability
+        s = torch.clamp(s, min=0.0, max=100.0)
 
         # Normalize signals to similar scales
         # Surprise is already a loss value, relevance is cosine sim [-1, 1]
         # Shift relevance to [0, 1] range
-        r = (relevance + 1) / 2
+        r = (relevance.float() + 1) / 2
 
-        # Contiguity is already non-negative
-        c = contiguity
+        # Contiguity is already non-negative; clamp for safety
+        c = torch.clamp(contiguity.float(), min=0.0, max=100.0)
 
         # Composite gate
         gate_logits = (
@@ -445,12 +452,14 @@ class MultiSignalNeuralMemoryAblation(MultiSignalNeuralMemory):
     ) -> Tensor:
         """Compute gate with ablated signals zeroed."""
         if surprise.dim() == 3:
-            s = surprise.mean(dim=1)
+            s = surprise.float().mean(dim=1)
         else:
-            s = surprise
+            s = surprise.float()
 
-        r = (relevance + 1) / 2
-        c = contiguity
+        s = torch.clamp(s, min=0.0, max=100.0)
+
+        r = (relevance.float() + 1) / 2
+        c = torch.clamp(contiguity.float(), min=0.0, max=100.0)
 
         # Apply ablation masks
         if not self.use_surprise:
