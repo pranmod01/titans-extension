@@ -115,6 +115,7 @@ class MultiSignalNeuralMemory(nn.Module):
         # Projection to normalize hidden states for goal similarity
         self.state_proj = nn.Linear(dim, dim, bias=False)
 
+    @torch.amp.autocast('cuda', enabled=False)
     def compute_goal_relevance(self, hidden_states: Tensor) -> Tensor:
         """
         Compute goal-relevance signal R_t.
@@ -144,6 +145,7 @@ class MultiSignalNeuralMemory(nn.Module):
 
         return relevance
 
+    @torch.amp.autocast('cuda', enabled=False)
     def compute_temporal_contiguity(
         self,
         current_surprise: Tensor,
@@ -213,6 +215,7 @@ class MultiSignalNeuralMemory(nn.Module):
 
         return contiguity, new_history
 
+    @torch.amp.autocast('cuda', enabled=False)
     def compute_composite_gate(
         self,
         surprise: Tensor,
@@ -260,6 +263,7 @@ class MultiSignalNeuralMemory(nn.Module):
 
         return torch.sigmoid(gate_logits)
 
+    @torch.amp.autocast('cuda', enabled=False)
     def forward(
         self,
         seq: Tensor,
@@ -360,8 +364,8 @@ class MultiSignalNeuralMemory(nn.Module):
             composite_gate = composite_gate[:, :seq_len]
 
         # Apply gate to modulate retrieved memories
-        # The gate determines how strongly memory content affects output
-        gate_expanded = composite_gate.unsqueeze(-1)  # [batch, seq, 1]
+        # Cast gate back to retrieved's dtype so the residual stream stays in float16 under AMP
+        gate_expanded = composite_gate.to(retrieved.dtype).unsqueeze(-1)  # [batch, seq, 1]
         retrieved = retrieved * gate_expanded
 
         # Track cumulative attention for consolidation
@@ -435,15 +439,13 @@ class MultiSignalNeuralMemoryAblation(MultiSignalNeuralMemory):
 
         # Zero out weights for disabled signals
         if not use_surprise:
-            self.w_surprise = nn.Parameter(torch.tensor(0.0))
-            self.w_surprise.requires_grad = False
+            self.w_surprise = nn.Parameter(torch.zeros(1).squeeze().clone(), requires_grad=False)
         if not use_relevance:
-            self.w_relevance = nn.Parameter(torch.tensor(0.0))
-            self.w_relevance.requires_grad = False
+            self.w_relevance = nn.Parameter(torch.zeros(1).squeeze().clone(), requires_grad=False)
         if not use_contiguity:
-            self.w_contiguity = nn.Parameter(torch.tensor(0.0))
-            self.w_contiguity.requires_grad = False
+            self.w_contiguity = nn.Parameter(torch.zeros(1).squeeze().clone(), requires_grad=False)
 
+    @torch.amp.autocast('cuda', enabled=False)
     def compute_composite_gate(
         self,
         surprise: Tensor,

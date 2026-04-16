@@ -136,6 +136,7 @@ class DualStoreMemory(nn.Module):
         """Learnable mixing coefficient for fast/slow stores."""
         return torch.sigmoid(self._beta_logit)
 
+    @torch.amp.autocast('cuda', enabled=False)
     def forward(
         self,
         seq: Tensor,
@@ -376,6 +377,7 @@ class SingleStoreMemory(nn.Module):
     def beta(self) -> Tensor:
         return self._beta
 
+    @torch.amp.autocast('cuda', enabled=False)
     def forward(
         self,
         seq: Tensor,

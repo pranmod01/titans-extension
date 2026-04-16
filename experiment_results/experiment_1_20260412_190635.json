@@ -1,0 +1,1006 @@
+{
+  "vanilla": [
+    {
+      "step": 50,
+      "loss": 5.304844627380371,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 100,
+      "loss": 3.998879246711731,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 150,
+      "loss": 3.597122993469238,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 200,
+      "loss": 3.3067042207717896,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 250,
+      "loss": 2.9997811985015868,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 300,
+      "loss": 2.8260974645614625,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 350,
+      "loss": 2.6767688846588134,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 400,
+      "loss": 2.6164462614059447,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 450,
+      "loss": 2.489408378601074,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 500,
+      "loss": 2.404146590232849,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 550,
+      "loss": 2.324888520240784,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 600,
+      "loss": 2.2711270403862,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 650,
+      "loss": 2.143578884601593,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 700,
+      "loss": 2.065930898189545,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 750,
+      "loss": 2.0388683700561523,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 800,
+      "loss": 1.953978455066681,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 850,
+      "loss": 1.9493384957313538,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 900,
+      "loss": 1.9205640006065368,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 950,
+      "loss": 1.892330870628357,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1000,
+      "loss": 1.8514576435089112,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1050,
+      "loss": 1.8509173130989074,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1100,
+      "loss": 1.8264891624450683,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1150,
+      "loss": 1.8306058883666991,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1200,
+      "loss": 1.7732361340522766,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1250,
+      "loss": 1.7767571187019349,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1300,
+      "loss": 1.7553130412101745,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1350,
+      "loss": 1.7224380016326903,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1400,
+      "loss": 1.7670937228202819,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1450,
+      "loss": 1.7479989624023438,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1500,
+      "loss": 1.7433266592025758,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1550,
+      "loss": 1.703231897354126,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1600,
+      "loss": 1.717310242652893,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1650,
+      "loss": 1.669555540084839,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1700,
+      "loss": 1.700401246547699,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1750,
+      "loss": 1.6997210907936096,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1800,
+      "loss": 1.6875884771347045,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1850,
+      "loss": 1.6902564644813538,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1900,
+      "loss": 1.667383143901825,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 1950,
+      "loss": 1.6490842723846435,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2000,
+      "loss": 1.6764655351638793,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2050,
+      "loss": 1.6278303289413452,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2100,
+      "loss": 1.6647698760032654,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2150,
+      "loss": 1.654731969833374,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2200,
+      "loss": 1.629552948474884,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2250,
+      "loss": 1.6431299138069153,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2300,
+      "loss": 1.6301495552062988,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2350,
+      "loss": 1.6137268328666687,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2400,
+      "loss": 1.5852880215644836,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2450,
+      "loss": 1.6038548803329469,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2500,
+      "loss": 1.6179653000831604,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2550,
+      "loss": 1.583423252105713,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2600,
+      "loss": 1.569854917526245,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2650,
+      "loss": 1.564634690284729,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2700,
+      "loss": 1.597951135635376,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2750,
+      "loss": 1.5686766362190248,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2800,
+      "loss": 1.593510594367981,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2850,
+      "loss": 1.5775496816635133,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2900,
+      "loss": 1.6106629824638368,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 2950,
+      "loss": 1.5745113134384154,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3000,
+      "loss": 1.5628293538093567,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3050,
+      "loss": 1.5863364386558532,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3100,
+      "loss": 1.5370680046081544,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3150,
+      "loss": 1.5609731006622314,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3200,
+      "loss": 1.5424395394325257,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3250,
+      "loss": 1.5557145285606384,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3300,
+      "loss": 1.5425710082054138,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3350,
+      "loss": 1.5686484861373902,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3400,
+      "loss": 1.5643880152702332,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3450,
+      "loss": 1.5364802694320678,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3500,
+      "loss": 1.5325407433509826,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3550,
+      "loss": 1.5376493668556213,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3600,
+      "loss": 1.540584316253662,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3650,
+      "loss": 1.5283917117118835,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3700,
+      "loss": 1.5224846911430359,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3750,
+      "loss": 1.5086165046691895,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3800,
+      "loss": 1.5411221551895142,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3850,
+      "loss": 1.5062398982048035,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3900,
+      "loss": 1.5374101305007934,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 3950,
+      "loss": 1.5223388433456422,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4000,
+      "loss": 1.5440731072425842,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4050,
+      "loss": 1.5325075554847718,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4100,
+      "loss": 1.5379404735565185,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4150,
+      "loss": 1.544238681793213,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4200,
+      "loss": 1.53181636095047,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4250,
+      "loss": 1.4894592022895814,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4300,
+      "loss": 1.5195254182815552,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4350,
+      "loss": 1.5178905153274536,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4400,
+      "loss": 1.4971557641029358,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4450,
+      "loss": 1.532534966468811,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4500,
+      "loss": 1.5002739119529724,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4550,
+      "loss": 1.5110252714157104,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4600,
+      "loss": 1.5024372029304505,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4650,
+      "loss": 1.4985763716697693,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4700,
+      "loss": 1.481578652858734,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4750,
+      "loss": 1.491320753097534,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4800,
+      "loss": 1.5151603674888612,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4850,
+      "loss": 1.4928110313415528,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4900,
+      "loss": 1.4993139386177063,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 4950,
+      "loss": 1.4895937705039979,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5000,
+      "loss": 1.4815121579170227,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5050,
+      "loss": 1.4652166080474853,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5100,
+      "loss": 1.497287127971649,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5150,
+      "loss": 1.4876051950454712,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5200,
+      "loss": 1.5245615363121032,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5250,
+      "loss": 1.484035382270813,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5300,
+      "loss": 1.492631015777588,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5350,
+      "loss": 1.4845361733436584,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5400,
+      "loss": 1.505582618713379,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5450,
+      "loss": 1.4590422248840331,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5500,
+      "loss": 1.484870753288269,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5550,
+      "loss": 1.4982075786590576,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5600,
+      "loss": 1.4882760238647461,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5650,
+      "loss": 1.477383372783661,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5700,
+      "loss": 1.4704806733131408,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5750,
+      "loss": 1.468796751499176,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5800,
+      "loss": 1.4692604756355285,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5850,
+      "loss": 1.4671629905700683,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5900,
+      "loss": 1.4731977796554565,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 5950,
+      "loss": 1.4823278641700746,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6000,
+      "loss": 1.4805135464668273,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6050,
+      "loss": 1.475366780757904,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6100,
+      "loss": 1.4997365117073058,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6150,
+      "loss": 1.4730967783927917,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6200,
+      "loss": 1.4870907020568849,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6250,
+      "loss": 1.4652431797981262,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6300,
+      "loss": 1.4554597187042235,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6350,
+      "loss": 1.4462860488891602,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6400,
+      "loss": 1.4501077723503113,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6450,
+      "loss": 1.455734679698944,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6500,
+      "loss": 1.4710723185539245,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6550,
+      "loss": 1.481438195705414,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6600,
+      "loss": 1.4697843980789185,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6650,
+      "loss": 1.479299819469452,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6700,
+      "loss": 1.4540394759178161,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6750,
+      "loss": 1.4662165236473084,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6800,
+      "loss": 1.452413260936737,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6850,
+      "loss": 1.4171110916137695,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6900,
+      "loss": 1.4772764086723327,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 6950,
+      "loss": 1.4437748646736146,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7000,
+      "loss": 1.4704608511924744,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7050,
+      "loss": 1.452458415031433,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7100,
+      "loss": 1.4288080215454102,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7150,
+      "loss": 1.4500491189956666,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7200,
+      "loss": 1.4641327571868896,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7250,
+      "loss": 1.4496398258209229,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7300,
+      "loss": 1.434298539161682,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7350,
+      "loss": 1.4659819889068604,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7400,
+      "loss": 1.4175393867492676,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7450,
+      "loss": 1.4515597796440125,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7500,
+      "loss": 1.4599015402793885,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7550,
+      "loss": 1.4232431221008301,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7600,
+      "loss": 1.4318167281150818,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7650,
+      "loss": 1.4276265573501588,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7700,
+      "loss": 1.4219082903862,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7750,
+      "loss": 1.439505376815796,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7800,
+      "loss": 1.4381184339523316,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7850,
+      "loss": 1.4464786982536315,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7900,
+      "loss": 1.4824331951141358,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 7950,
+      "loss": 1.433962881565094,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8000,
+      "loss": 1.4136033606529237,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8050,
+      "loss": 1.4539728784561157,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8100,
+      "loss": 1.4290381932258607,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8150,
+      "loss": 1.4552763557434083,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8200,
+      "loss": 1.4057838344573974,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8250,
+      "loss": 1.4726515245437621,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8300,
+      "loss": 1.4173610782623292,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8350,
+      "loss": 1.412644193172455,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8400,
+      "loss": 1.4492237377166748,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8450,
+      "loss": 1.4605807662010193,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8500,
+      "loss": 1.433324842453003,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8550,
+      "loss": 1.4156497859954833,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8600,
+      "loss": 1.4208434700965882,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8650,
+      "loss": 1.4617616844177246,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8700,
+      "loss": 1.4160020971298217,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8750,
+      "loss": 1.4228129720687865,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8800,
+      "loss": 1.4099143552780151,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8850,
+      "loss": 1.4194575452804565,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8900,
+      "loss": 1.3934371185302734,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 8950,
+      "loss": 1.4271631717681885,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9000,
+      "loss": 1.4205975866317748,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9050,
+      "loss": 1.407214322090149,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9100,
+      "loss": 1.4187052726745606,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9150,
+      "loss": 1.4065110802650451,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9200,
+      "loss": 1.4126553273200988,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9250,
+      "loss": 1.4215905237197877,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9300,
+      "loss": 1.4022588801383973,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9350,
+      "loss": 1.4267054462432862,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9400,
+      "loss": 1.396782443523407,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9450,
+      "loss": 1.383564865589142,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9500,
+      "loss": 1.4324854469299317,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9550,
+      "loss": 1.3993197512626647,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9600,
+      "loss": 1.4310785555839538,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9650,
+      "loss": 1.4039182448387146,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9700,
+      "loss": 1.437723150253296,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9750,
+      "loss": 1.4274770617485046,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9800,
+      "loss": 1.4023220491409303,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9850,
+      "loss": 1.4009335088729857,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9900,
+      "loss": 1.4226004195213318,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 9950,
+      "loss": 1.3969491171836852,
+      "model": "Vanilla Transformer"
+    },
+    {
+      "step": 10000,
+      "loss": 1.4427219414711,
+      "model": "Vanilla Transformer"
+    }
+  ],
+  "titans_original": [],
+  "multi_signal": []
+}

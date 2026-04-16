@@ -468,7 +468,7 @@ def train_experiment(
 
     scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda)
 
-    scaler = GradScaler() if config.use_amp and device.type == 'cuda' else None
+    scaler = None  # AMP disabled — NeuralMemory uses torch.func.grad+vmap which breaks under float16
 
     model.train()
     metrics = []
@@ -487,7 +487,7 @@ def train_experiment(
             batch = batch.to(device)
             optimizer.zero_grad()
 
-            with autocast(enabled=config.use_amp and device.type == 'cuda'):
+            with autocast(enabled=False):
                 try:
                     loss, model_metrics, _ = model(
                         batch, return_loss=True, return_metrics=True
@@ -495,6 +495,8 @@ def train_experiment(
                 except TypeError:
                     loss = model(batch, return_loss=True)
                     model_metrics = {}
+
+            loss = loss.float()  # ensure float32 regardless of model internals (titans_pytorch uses mixed precision)
 
             if scaler:
                 scaler.scale(loss).backward()
@@ -574,7 +576,7 @@ def create_ablation_model(
                 use_relevance=use_relevance,
                 use_contiguity=use_contiguity,
                 chunk_size=config.model.segment_len,
-                heads=config.model.heads
+                heads=config.model.memory_heads
             )
             mem.memory = ablation_mem
 
