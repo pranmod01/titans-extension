@@ -1,0 +1,14 @@
+{
+  "multi_signal": {
+    "phase1_before": 306.0003715633798,
+    "phase1_after": 4.338024481953208,
+    "phase2_after": 3.9831166415343136,
+    "retention_ratio": 1.0011765069252183
+  },
+  "dual_store": {
+    "phase1_before": 313.37710914946155,
+    "phase1_after": 4.351318108159338,
+    "phase2_after": 3.996325121337311,
+    "retention_ratio": 1.0011487487359092
+  }
+}
