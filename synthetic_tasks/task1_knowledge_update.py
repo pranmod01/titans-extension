@@ -47,7 +47,6 @@ def _build_example(rng, ex_id, gap_cat):
     # --- Build text segments ---
     fact_line = f"FACT {attribute} {entity} {val_orig} ."
 
-    # Filler after FACT, before first distractor(s)
     # Distribute gap_chars across segments between FACT and UPDATE
     n_segments = n_distractors + 1  # gaps between FACT...distractor(s)...UPDATE
     per_segment = max(40, gap_chars // n_segments)

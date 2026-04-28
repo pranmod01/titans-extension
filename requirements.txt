@@ -1,21 +1,28 @@
 # Core dependencies
-torch>=2.0.0
-titans-pytorch>=0.5.0
+torch>=2.11.0
+titans-pytorch>=0.5.3
 
 # Titans dependencies (auto-installed with titans-pytorch)
-einops>=0.8.0
-einx>=0.3.0
-rotary-embedding-torch
-axial-positional-embedding>=0.3.10
-x-transformers
-hyper-connections>=0.3.11
+einops>=0.8.2
+einx>=0.4.3
+rotary-embedding-torch>=0.8.9
+axial-positional-embedding>=0.3.12
+x-transformers>=2.18.9
+hyper-connections>=0.4.10
+accelerated-scan>=0.3.1
+assoc-scan>=0.0.4
+tensordict>=0.12.2
 
 # Training utilities
-tqdm>=4.65.0
-numpy>=1.24.0
+tqdm>=4.67.3
+numpy>=2.4.4
+scipy>=1.17.1
+matplotlib>=3.10.9
+scikit-learn>=1.8.0
 
-# Experiment tracking (optional, for Colab)
-wandb>=0.15.0
-
-# For data handling
+# Data
+datasets>=4.8.5
 requests>=2.28.0
+
+# Experiment tracking (optional)
+wandb>=0.26.1

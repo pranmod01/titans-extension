@@ -13,6 +13,8 @@
 set -e
 mkdir -p logs
 
+module load cuda/12.3
+
 source /insomnia001/home/pm3361/titans-extension/venv/bin/activate
 
 cd /insomnia001/home/pm3361/titans-extension

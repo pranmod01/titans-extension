@@ -124,15 +124,20 @@ class SyntheticTaskDataset(Dataset):
             ans_end   = raw_len          # exclusive, within enc
             ans_start = raw_len - ans_len  # inclusive
 
-            # Pad/truncate to seq_len+1
+            # Pad/truncate to seq_len+1.
+            # When truncation is needed, remove bytes from the MIDDLE so that
+            # both the FACT (at the start) and the ANSWER (at the end) are kept.
             if raw_len < seq_len + 1:
                 enc = enc + [pad_id] * (seq_len + 1 - raw_len)
             else:
-                enc = enc[:seq_len + 1]
-                # If we truncated past the answer, clamp (shouldn't happen for
-                # well-formed examples where answer is at the end)
-                ans_end   = min(ans_end,   seq_len + 1)
-                ans_start = min(ans_start, ans_end - ans_len)
+                keep = seq_len + 1
+                remove = raw_len - keep
+                # Cut from the middle: preserve first half and last half of keep
+                cut_start = keep // 2
+                enc = enc[:cut_start] + enc[cut_start + remove:]
+                # Answer was at the end; its position shifts left by `remove`
+                ans_start -= remove
+                ans_end   -= remove
 
             token_ids = torch.tensor(enc, dtype=torch.long)
 
@@ -258,9 +263,10 @@ def train_one_epoch(
 
         # Forward: shift input/target inside model when return_loss=True
         try:
-            loss, _, _ = model(batch, return_loss=True, return_metrics=False)
+            out = model(batch, return_loss=True, return_metrics=False)
         except TypeError:
-            loss = model(batch, return_loss=True)
+            out = model(batch, return_loss=True)
+        loss = out[0] if isinstance(out, (tuple, list)) else out
 
         if torch.isnan(loss):
             print(f"    [WARN] NaN loss at step {step}, skipping batch")
@@ -279,6 +285,7 @@ def train_one_epoch(
         if step % log_every == 0:
             avg = acc_loss / acc_n
             metrics.append({"step": step, "loss": avg})
+            print(f"    step={step:5d}  loss={avg:.4f}")
             if _HAS_TQDM:
                 it.set_postfix(loss=f"{avg:.4f}")
             acc_loss = 0.0
@@ -311,9 +318,12 @@ def evaluate_exact_match(
     """
     model.eval()
 
-    correct   = 0
-    total     = 0
-    per_meta  = {}  # meta_val -> (correct, total)
+    correct         = 0
+    total           = 0
+    tok_correct     = 0
+    tok_total       = 0
+    first_correct   = 0
+    per_meta        = {}  # meta_val -> (correct, total)
 
     with torch.no_grad():
         for batch_idx, batch in enumerate(
@@ -326,9 +336,10 @@ def evaluate_exact_match(
             inp = batch[:, :-1]        # [B, seq_len]
 
             try:
-                logits, _, _ = model(inp, return_metrics=False)
+                out = model(inp, return_metrics=False)
             except TypeError:
-                logits = model(inp)
+                out = model(inp)
+            logits = out[0] if isinstance(out, (tuple, list)) else out
 
             # logits: [B, seq_len, vocab]
             preds = logits.argmax(dim=-1)   # [B, seq_len]
@@ -364,6 +375,9 @@ def evaluate_exact_match(
                 is_correct = bool((pred_positions == gold).all().item())
                 correct += int(is_correct)
                 total   += 1
+                tok_correct  += int((pred_positions == gold).sum().item())
+                tok_total    += len(ans_b)
+                first_correct += int(pred_positions[0].item() == gold[0].item())
 
                 if per_meta_key:
                     mval = str(rec["meta"].get(per_meta_key, "unknown"))
@@ -372,6 +386,8 @@ def evaluate_exact_match(
 
     result = {
         "exact_match": correct / total if total > 0 else 0.0,
+        "first_tok_acc": first_correct / total if total > 0 else 0.0,
+        "token_acc": tok_correct / tok_total if tok_total > 0 else 0.0,
         "correct": correct,
         "total": total,
     }
@@ -471,7 +487,7 @@ def run_variant_on_task(
                     per_meta_key=TASK_META_KEY.get(task_key),
                 )
                 eval_checkpoints.append({"step": step, **mid_res})
-                print(f"    step={step:5d}  eval_acc={mid_res['exact_match']:.3f}")
+                print(f"    step={step:5d}  exact={mid_res['exact_match']:.3f}  first_tok={mid_res['first_tok_acc']:.3f}  tok_acc={mid_res['token_acc']:.3f}")
 
         # Save checkpoint
         if ckpt_path:
@@ -638,7 +654,9 @@ def main():
                     eval_only     = args.eval_only,
                 )
                 fe = result["final_eval"]
-                print(f"  -> final eval acc: {fe['exact_match']:.4f}  "
+                print(f"  -> final eval  exact={fe['exact_match']:.4f}  "
+                      f"first_tok={fe['first_tok_acc']:.4f}  "
+                      f"tok_acc={fe['token_acc']:.4f}  "
                       f"({fe['correct']}/{fe['total']})  "
                       f"elapsed: {result['elapsed_s']:.0f}s")
             except Exception:

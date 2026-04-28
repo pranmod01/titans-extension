@@ -24,6 +24,20 @@ logs/
 # Data
 data/
 
+# Checkpoints
+*.pt
+*.pth
+checkpoints/
+synthetic_tasks/checkpoints/
+
+# Experiment results and plots
+experiment_results/
+synthetic_tasks/results/
+plots/
+
+# Malformed version files
+=*/
+
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb
